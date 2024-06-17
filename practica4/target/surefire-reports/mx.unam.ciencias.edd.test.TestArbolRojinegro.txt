@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+Test set: mx.unam.ciencias.edd.test.TestArbolRojinegro
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.027 sec <<< FAILURE!
+testElimina(mx.unam.ciencias.edd.test.TestArbolRojinegro)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "mx.unam.ciencias.edd.VerticeArbolBinario.get()" is null
+	at mx.unam.ciencias.edd.ArbolBinario$Vertice.equals(ArbolBinario.java:181)
+	at mx.unam.ciencias.edd.ArbolBinario$Vertice.equals(ArbolBinario.java:186)
+	at mx.unam.ciencias.edd.ArbolBinario$Vertice.equals(ArbolBinario.java:212)
+	at mx.unam.ciencias.edd.ArbolRojinegro$VerticeRojinegro.equals(ArbolRojinegro.java:66)
+	at mx.unam.ciencias.edd.ArbolBinarioOrdenado.eliminaVertice(ArbolBinarioOrdenado.java:207)
+	at mx.unam.ciencias.edd.ArbolRojinegro.elimina(ArbolRojinegro.java:304)
+	at mx.unam.ciencias.edd.test.TestArbolRojinegro.testEliminaNegroRojo(TestArbolRojinegro.java:239)
+	at mx.unam.ciencias.edd.test.TestArbolRojinegro.testElimina(TestArbolRojinegro.java:414)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
